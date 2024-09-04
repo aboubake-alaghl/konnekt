@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4CC9A7;
+  border-radius: 120px;
+}
+
+.PostContent>*>img {
+  width: 100% !important;
+}
+
+.PostContent>img {
+  width: 100% !important;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animatedBackground {
+  background: linear-gradient(270deg, #4CC8A6, #3BA98E, #4CC8A6);
+  background-size: 600% 600%;
+  animation: gradientBackground 10s ease infinite;
+  padding: 24px;
+  /* You can adjust the padding as needed */
+  border-radius: 8px;
+  /* You can adjust the border-radius as needed */
+}
